@@ -25,19 +25,16 @@ const TableComponent = () => {
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error: {error.message}</p>;
 
-    // Render the table with fetched data
+    // Render the table with selected data columns
     return (
         <div className="table-container">
-            <h2>Cost Overview</h2>
+            <h2>Expense List</h2>
             <table className="cost-table">
                 <thead>
                     <tr>
                         <th>Item</th>
                         <th>Amount</th>
-                        <th>Date</th>
                         <th>Category</th>
-                        <th>Person</th>
-                        <th>Comments</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -45,10 +42,7 @@ const TableComponent = () => {
                         <tr key={item._id}>
                             <td>{item.naziv}</td>
                             <td>${item.znesek.toFixed(2)}</td> {/* Format amount */}
-                            <td>{item.datum}</td>
                             <td>{item.kategorija}</td>
-                            <td>{item.oseba}</td>
-                            <td>{item.komentar}</td>
                         </tr>
                     ))}
                 </tbody>

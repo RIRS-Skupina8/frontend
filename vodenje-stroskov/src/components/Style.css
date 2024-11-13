@@ -2,18 +2,18 @@
 
 .cost-tracking {
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #1a1a1a;
     border-radius: 8px;
-    max-width: 90%; /* Adjusted width for alignment */
+    max-width: 90%;
     margin: 20px auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     overflow-x: auto;
-    margin-left: 460px; /* Margin to prevent overlapping with sidebar */
+    margin-left: 460px;
 }
 
     .cost-tracking h2 {
         text-align: center;
-        color: #333;
+        color: #e0e0e0;
         margin-bottom: 20px;
         font-size: 24px;
         font-weight: 600;
@@ -23,29 +23,33 @@
     width: 100%;
     min-width: 800px;
     border-collapse: collapse;
+    background-color: #282828;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
-    .cost-table th,
-    .cost-table td {
+    .cost-table th, .cost-table td {
         padding: 12px 15px;
         text-align: left;
-        border-bottom: 1px solid #e0e0e0;
+        border-bottom: 1px solid #444;
+        color: #f0f0f0;
     }
 
     .cost-table th {
-        background-color: #4CAF50;
+        background-color: #007bff;
         color: #ffffff;
-        font-weight: 500;
+        font-weight: 600;
         white-space: nowrap;
+        text-transform: uppercase;
     }
 
     .cost-table td {
-        color: #555;
+        color: #e0e0e0;
         vertical-align: middle;
     }
 
     .cost-table tr:hover {
-        background-color: #f7f7f7;
+        background-color: #3a3a3a;
     }
 
     .cost-table td {
@@ -62,7 +66,7 @@
 
 @media (max-width: 768px) {
     .cost-tracking {
-        margin-left: 0; /* Reset margin on smaller screens */
+        margin-left: 0;
         padding: 10px;
     }
 
